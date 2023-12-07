@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function fetchData() {
-    fetch('https://api.github.com/repos/yourusername/yourreponame/contents/public/cdn')
+    fetch('https://api.github.com/JackTheGuide3344/Guide-Dev-CDN/tree/main/Site/Cdn')
         .then(response => response.json())
         .then(data => {
             const fileLinks = data.map(file => `<a href="${file.download_url}" target="_blank">${file.name}</a>`).join('<br>');
